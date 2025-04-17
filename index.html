@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouts and Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">WebDev Studio</a>
+        <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <main class="main-content">
+            <!-- Course Objectives Section -->
+            <section class="content-section">
+                <h2>CSS Layout Objectives</h2>
+                <ol class="styled-list">
+                    <li>Implement Flexbox and Grid layouts</li>
+                    <li>Create responsive navigation</li>
+                    <li>Use media queries effectively</li>
+                    <li>Ensure cross-device compatibility</li>
+                    <li>Optimize page structure</li>
+                </ol>
+            </section>
+
+            <!-- Featured Image Section -->
+            <section class="content-section">
+                <h2>Web Development Insights</h2>
+                <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg" 
+                     alt="Programmer working on computer" 
+                     class="responsive-image">
+            </section>
+
+            <!-- Contacts Section with Grid Layout -->
+            <section class="content-section">
+                <h2>Developer Network</h2>
+                <div class="contacts-grid">
+                    <div>
+                        <h3>John Doe</h3>
+                        <p>Frontend Developer</p>
+                        <p>john.doe@example.com</p>
+                    </div>
+                    <div>
+                        <h3>Jane Smith</h3>
+                        <p>Backend Engineer</p>
+                        <p>jane.smith@example.com</p>
+                    </div>
+                    <div>
+                        <h3>Mike Johnson</h3>
+                        <p>Full Stack Developer</p>
+                        <p>mike.johnson@example.com</p>
+                    </div>
+                    <div>
+                        <h3>Emily Brown</h3>
+                        <p>UI/UX Designer</p>
+                        <p>emily.brown@example.com</p>
+                    </div>
+                    <div>
+                        <h3>David Wilson</h3>
+                        <p>DevOps Specialist</p>
+                        <p>david.wilson@example.com</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Registration Form Section -->
+            <section class="content-section">
+                <h2>Join Our Community</h2>
+                <form class="form-container">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" 
+                               id="fullName" 
+                               name="fullName" 
+                               placeholder="Enter your full name" 
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               placeholder="Enter your email" 
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interests">Area of Interest</label>
+                        <select id="interests" name="interests">
+                            <option value="">Select your interest</option>
+                            <option value="frontend">Frontend Development</option>
+                            <option value="backend">Backend Development</option>
+                            <option value="fullstack">Full Stack Development</option>
+                            <option value="devops">DevOps</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Responsive Web Design Showcase</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+555) 987-6543</td>
+                        <td>jane.smith@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>789 Web Avenue, Austin, TX</td>
+                        <td>+1 (555) 246-8135</td>
+                        <td>mike.johnson@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Brown</td>
+                        <td>321 Python Road, Boston, MA</td>
+                        <td>+1 (555) 369-2580</td>
+                        <td>emily.brown@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>David Wilson</td>
+                        <td>654 JavaScript Drive, Seattle, WA</td>
+                        <td>+1 (555) 159-7530</td>
+                        <td>david.wilson@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>User Registration</h2>
+            <form id="registrationForm" action="#" method="post">
+                <!-- Name Field -->
+                <label for="fullName">Full Name *</label>
+                <input type="text" 
+                       id="fullName" 
+                       name="fullName" 
+                       placeholder="Enter your full name" 
+                       required 
+                       minlength="2" 
+                       maxlength="50">
+
+                <!-- Email Field -->
+                <label for="email">Email Address *</label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       placeholder="Enter your email" 
+                       required 
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+                <!-- Password Field -->
+                <label for="password">Password *</label>
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       placeholder="Enter your password" 
+                       required 
+                       minlength="8" 
+                       maxlength="20">
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth *</label>
+                <input type="date" 
+                       id="dob" 
+                       name="dob" 
+                       required>
+
+                <!-- Dropdown - Education Level -->
+                <label for="educationLevel">Education Level *</label>
+                <select id="educationLevel" name="educationLevel" required>
+                    <option value="">Select Education Level</option>
+                    <option value="highschool">High School</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="postgraduate">Post Graduate</option>
+                </select>
+
+                <!-- Radio Buttons - Program Interest -->
+                <fieldset>
+                    <legend>Program of Interest *</legend>
+                    <input type="radio" id="webDev" name="program" value="webDevelopment" required>
+                    <label for="webDev">Web Development</label>
+                    
+                    <input type="radio" id="dataSci" name="program" value="dataSience">
+                    <label for="dataSci">Data Science</label>
+                    
+                    <input type="radio" id="aiMl" name="program" value="aiMachineLearning">
+                    <label for="aiMl">AI & Machine Learning</label>
+                </fieldset>
+
+                <!-- Checkboxes - Skills -->
+                <fieldset>
+                    <legend>Programming Skills</legend>
+                    <input type="checkbox" id="html" name="skills" value="html">
+                    <label for="html">HTML</label>
+                    
+                    <input type="checkbox" id="css" name="skills" value="css">
+                    <label for="css">CSS</label>
+                    
+                    <input type="checkbox" id="javascript" name="skills" value="javascript">
+                    <label for="javascript">JavaScript</label>
+                    
+                    <input type="checkbox" id="python" name="skills" value="python">
+                    <label for="python">Python</label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML5 Advanced Elements Demo</p>
+    </footer>
+</body>
+</html>
